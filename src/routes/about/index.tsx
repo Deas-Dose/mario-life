@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+import { DocumentHead } from "@builder.io/qwik-city";
 
 export default component$(() => {
     console.log('hello')
@@ -11,3 +12,13 @@ export default component$(() => {
         </article>
     );
 })
+
+export const head: DocumentHead = {
+    title: "About Mario Life",
+    meta: [
+        {
+            name: "description",
+            content: "About page for Mario Life",
+        }
+    ],
+};
